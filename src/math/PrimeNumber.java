@@ -10,6 +10,21 @@ public class PrimeNumber {
 		 * 
 		 */
 
-	}
+        int limit = 100000000;
+       
+        System.out.println("Prime numbers between 1 and " + limit);
 
+        for(int i=1; i < limit; i++){
+                boolean isPrime = true;
+                for(int j=2; j < i ; j++){
+                        if(i % j == 0){
+                                isPrime = false;
+                                break;
+                        }
+                }
+                // print the number
+                if(isPrime)
+                        System.out.println(i + " ");
+        }
+	}
 }
