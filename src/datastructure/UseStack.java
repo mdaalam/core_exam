@@ -1,6 +1,6 @@
 package datastructure;
 
-import java.lang.reflect.Array;
+import java.util.Stack;
 
 public class UseStack {
 
@@ -11,19 +11,18 @@ public class UseStack {
 		 * 
 		 */
 		
-		int temp=0;
-		int[] array = {5,4,3,2,1};
-		for(int i=0; i<array.length-1; i++)
-			for(int j=0; j<array.length-1; j++)
-				if(array[j]>array[j+1]) {
-					temp = array[j];
-					array[j] = array[j+1];
-					array[j+1] = temp;
-				}
-		
-		for(int k=0; k<array.length;k++)
-			System.out.println(array[k]);
-			
-	}
+		Stack<String> stack = new Stack<>();
 
+		stack.push("1");
+		stack.push("2");
+		stack.push("3");
+		stack.remove(2);
+		stack.push("3");
+  
+		Object objTop = stack.peek();
+		System.out.println(objTop);
+	
+		for (;!(stack.isEmpty());)
+				System.out.println(stack.pop());		
+	}
 }

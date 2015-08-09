@@ -64,10 +64,10 @@ public class EmployeeInfo extends EmployeeAbs {
     	return "Company Name: " + companyName + "\nCompany Address: " + companyAddress + 
     			"\nEmployee Name: " + name + "\nEmployee Id: " + employeeId + "\nSalary: " + salary + 
     			"\nPerformance: " + performance + "\nYears: " + years + "\nBonus: " + bonus +
-    			"\nPension: " + pension + "\nDepartment: " + department + "\nTotal Salary + "+calculateSalary();
+    			"\nPension: " + pension + "\nDepartment: " + department + "\nTotal Salary " + calculateSalary();
     }
     
-	
+	   
 	/*
 	 * This methods should calculate Employee bonus based on salary and performance.
 	 * Then it will return the total yearly bonus. So you need to implement the logic.

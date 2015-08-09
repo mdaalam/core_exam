@@ -17,8 +17,8 @@ public class LowestNumber {
 				array[i+1] = temp;
 			}
 		
-		for(int k=0; k<array.length; k++)
-			System.out.println(array[k]);
+		//for(int k=0; k<array.length; k++)
+			System.out.println(array[0]);
 		
 		
 		
